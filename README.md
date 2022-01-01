@@ -1,2 +1,2 @@
-# www.ourespace.network
-www.ourespace.network
+# www.ourspace.network
+www.ourspace.network
