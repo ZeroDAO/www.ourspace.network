@@ -9,11 +9,10 @@ module.exports = {
         assetsRoot: path.resolve(__dirname, '../web'),
         assetsSubDirectory: 'static',
 
-        // 打包静态文件到OSS
         // ssetsPublicPath: 'http://.../',
 
-        assetsPublicPath: 'https://pic.tom24h.com/0p0/',
-        productionSourceMap: false,
+        // assetsPublicPath: 'https://pic.tom24h.com/0p0/',
+        // productionSourceMap: false,
 
         // Gzip off by default as many popular static hosts such as
         // Surge or Netlify already gzip all static assets for you.
