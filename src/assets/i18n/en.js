@@ -108,39 +108,39 @@ module.exports = {
               quarterly: 'Q2'
             },
             {
-              title: 'Sky garden',
+              title: 'Blover',
               subtitle:'test network',
-              text: 'Alpha test network, including the core TIR algorithm and reputation system, and finally iterated to the full version',
+              text: 'Blover Test Online',
               timestamp: '2021',
               quarterly: 'Q4'
             },
             {
-              title: 'Greate navigation',
-              subtitle:'test network',
-              text: 'Support the core capabilities of the DAO network and serve as the main test network',
-              timestamp: '2021',
-              quarterly: 'Q4'
+              title: 'Reputation Engine',
+              subtitle:'Engine',
+              text: 'Start supporting external social networks RSS3',
+              timestamp: '2022',
+              quarterly: 'Q1'
             },
             {
-              title: 'Mobile palace',
+              title: 'Montage Protocol',
               subtitle:'ecolofical upgrade',
-              text: 'Simulate scenarios on the chain, conduct rapid feasibility verification of multi-domain applications, and conduct on-chain testing and development',
-              timestamp: '2021',
-              quarterly: 'Q4'
-            },
-            {
-              title: 'Main network',
-              subtitle:'online',
-              text: 'Complete support for smart contracts, reputation systems and DAOs',
+              text: 'Chain-less decentralized identity protocols',
               timestamp: '2022',
               quarterly: 'Q1'
             },
             {
-              title: 'Star Wanderer',
-              subtitle:'main network',
-              text: 'Upgrade the cross-chain capability of the main network',
+              title: 'Minsky Bank',
+              subtitle:'Bank',
+              text: 'Go live with unsecured, negative rate reputation lending at ETH. The first Web3 bank.',
               timestamp: '2022',
-              quarterly: 'Q1'
+              quarterly: 'Q2'
+            },
+            {
+              title: 'Confidential',
+              subtitle:'▊▊ ▊▊▊',
+              text: '▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊',
+              timestamp: '2022',
+              quarterly: 'Q3'
             },
           ]
     }

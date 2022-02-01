@@ -109,39 +109,39 @@ module.exports = {
         quarterly: 'Q2'
       },
       {
-        title: '空中花园',
+        title: '三叶草',
         subtitle:'测试网',
         text: 'Alpha测试网络，包含核心TIR算法和声誉系统，并最终迭代为完整版',
         timestamp: '2021',
         quarterly: 'Q4'
       },
       {
-        title: '大航海',
-        subtitle:'测试网',
-        text: '支持 DAO 网络和智能合约，并作为主要测试网',
-        timestamp: '2021',
-        quarterly: 'Q4'
-      },
-      {
-        title: '移动宫殿',
-        subtitle:'生态升级',
-        text: '引导生态对多领域应用进行快速可行性验证，并进行链上测试和开发',
-        timestamp: '2021',
-        quarterly: 'Q4'
-      },
-      {
-        title: '主网',
-        subtitle:'正式上线',
-        text: '完整支持智能合约、声誉系统和DAO',
+        title: '声誉引擎',
+        subtitle:'Engine',
+        text: '支持外部社交网络 RSS3',
         timestamp: '2022',
         quarterly: 'Q1'
       },
       {
-        title: '星际漫游',
-        subtitle:'主网',
-        text: '升级主网跨链能力',
+        title: '蒙太奇协议',
+        subtitle:'身份协议',
+        text: 'Chain-less 的去中心化身份协议。',
         timestamp: '2022',
         quarterly: 'Q1'
+      },
+      {
+        title: '明斯基银行',
+        subtitle:'Bank',
+        text: '在以太坊上线无抵押、负利率的声誉贷。首个Web3银行。',
+        timestamp: '2022',
+        quarterly: 'Q2'
+      },
+      {
+        title: '保密',
+        subtitle:'▊▊▊▊',
+        text: '▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊',
+        timestamp: '2022',
+        quarterly: 'Q3'
       },
     ]
   }

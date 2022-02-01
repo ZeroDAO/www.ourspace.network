@@ -30,13 +30,13 @@
         <img class="clound" src="../assets/images/banner/cloud-r-b.png" />
       </div>
       <div class="brand">
-        <div class="t1 title" :data-text="$t('page.hello')">
-          {{ $t("page.hello") }}
+        <div class="t1 title" data-text="Reputation Engine">
+          Reputation Engine
         </div>
-        <p class="t3 white">{{ $t("page.Welcome") }}</p>
+        <!-- <p class="t3 white">{{ $t("page.Welcome") }}</p> -->
         <div class="expand">
           <div class="white-paper">
-            <a :href="$t('page.light_paper_href')" target="_blank">
+            <a :href="$t('page.technical_white_paper_href')" target="_blank">
               <el-button
                 type="primary"
                 class="pixel-button-4 pixel-button-4-primary"
@@ -53,10 +53,31 @@
           > -->
           </div>
 
-          <a :href="$t('page.technical_white_paper_href')" target="_blank">
+          <a href="https://docs.zerodao.net/" target="_blank">
             <el-button class="pixel-button-4 pixel-button-4-white"
-              ><i class="iconfont">&#xe68b; </i
-              >{{ $t("page.technical_white_paper") }}</el-button
+              ><i class="iconfont">&#xe68b; </i>Docs</el-button
+            >
+          </a>
+        </div>
+        <div class="icon-buttons">
+          <a href="https://twitter.com/zerodaonet" target="_blank">
+            <el-button class="iconfont" type="primary" circle
+              >&#xe65f;</el-button
+            >
+          </a>
+          <a href="https://zerodao.medium.com/" target="_blank">
+            <el-button class="iconfont" type="primary" circle
+              >&#xe6c9;</el-button
+            >
+          </a>
+          <a href="https://discord.gg/cFkK7vZxVq" target="_blank">
+            <el-button class="iconfont" type="primary" circle
+              >&#xe923;</el-button
+            >
+          </a>
+          <a href="https://github.com/ZeroDAO" target="_blank">
+            <el-button class="iconfont" type="primary" circle
+              >&#xe64a;</el-button
             >
           </a>
         </div>
@@ -102,64 +123,65 @@
     </div>
 
     <div class="ecology">
-      <p class="t3 white">
-        {{ $t("page.ecology.service") }}
-      </p>
-      <p class="t2 white">{{ $t("page.ecology.beginning") }}</p>
-      <div class="apps">
-        <img src="../assets/images/balls.png" />
-        <div class="ecology-name white">
-          {{ $t("page.ecology.application_layer") }}
-        </div>
+      <div class="safe normal-width">
+        <p class="white">100% + 2</p>
+        <p class="t1 white">Safe and secure</p>
+        <p class="white">
+          Meeting the most stringent security conditions. <br />100% spam users
+          with only two real users can still guarantee the security of the
+          reputation system.
+        </p>
       </div>
-      <div class="base">
-        <div class="ellips"></div>
-        <div class="ellips"></div>
-        <div class="ellips"></div>
-        <div class="ellips"></div>
-        <div class="ellips"></div>
-        <div class="ellips"></div>
-        <div class="ellips"></div>
-        <div class="ellips"></div>
-        <div class="ellips"></div>
-        <div class="ellips"></div>
-        <div class="t4 base-t">
-          <div class="ellips-text">PDID</div>
-          <div class="ellips-text">{{ $t("page.ecology.storage") }}</div>
-        </div>
-        <div class="t4 base-b">
-          <div class="ellips-text">DAO Network</div>
-          <div class="ellips-text">{{ $t("page.ecology.reputation") }}</div>
-        </div>
-        <div class="ecology-name white">
-          {{ $t("page.ecology.public_infrastructure_layer") }}
-        </div>
+    </div>
+
+    <div class="cards">
+      <div class="normal-width">
+        <p class="t2">AI-resistant Social Graph Analysis</p>
+        <el-table
+          :data="tableData"
+          style="width: 100%"
+          :row-class-name="tableRowClassName"
+        >
+          <el-table-column prop="category" fixed="left" label="">
+          </el-table-column>
+          <el-table-column prop="government" label="Digital Government IDs">
+            <template slot-scope="scope">
+              <iconTable :evaluate="scope.row.government" />
+            </template>
+          </el-table-column>
+          <el-table-column prop="turing" label="Reverse Turing Tests">
+            <template slot-scope="scope">
+              <iconTable :evaluate="scope.row.turing" />
+            </template>
+          </el-table-column>
+          <el-table-column prop="poap" label="P.O.A.P.">
+            <template slot-scope="scope">
+              <iconTable :evaluate="scope.row.poap" />
+            </template>
+          </el-table-column>
+          <el-table-column prop="poh" label="Proof Of Humanity">
+            <template slot-scope="scope">
+              <iconTable :evaluate="scope.row.poh" />
+            </template>
+          </el-table-column>
+          <el-table-column fixed="right" prop="os" label="Ourspace">
+            <template slot-scope="scope">
+              <iconTable class="os" :evaluate="scope.row.os" />
+            </template>
+          </el-table-column>
+        </el-table>
       </div>
-      <div class="decoration">
-        <img src="../assets/images/decoration1.svg" />
-      </div>
-      <div class="protocols">
-        <div class="bg"></div>
-        <div class="content">
-          <div class="item">
-            <span>{{ $t("page.ecology.social_protocols") }}</span>
-            <img src="../assets/images/arrow.svg" />
-          </div>
-          <div class="item">
-            <span>{{ $t("page.ecology.reputation_system") }}</span>
-            <img src="../assets/images/arrow.svg" />
-          </div>
-          <div class="item">
-            <span>DAO</span>
-            <img src="../assets/images/arrow.svg" />
-          </div>
+    </div>
+
+    <div class="grey-box">
+      <div class="normal-width">
+        <p class="t2 white">Supporting</p>
+        <div class="support">
+          <img src="../assets/images/support/rss3.svg" />
+          <img src="../assets/images/support/revery.svg" />
+          <img src="../assets/images/support/BitClout.svg" />
+          <img src="../assets/images/support/subsocial.svg" />
         </div>
-      </div>
-      <div class="decoration">
-        <img src="../assets/images/decoration2.svg" />
-      </div>
-      <div class="ecology-name white">
-        {{ $t("page.ecology.basic_protocol_layer") }}
       </div>
     </div>
 
@@ -192,10 +214,65 @@
 let isLoadList = true;
 const limit = 10;
 import BScroll from "@better-scroll/core";
+import IconTable from "../components/IconTable.vue";
 
 export default {
   data() {
-    return {};
+    return {
+      tableData: [
+        {
+          category: "Decentralized",
+          government: -1,
+          turing: 1,
+          poap: 0,
+          poh: 1,
+          os: 1,
+        },
+        {
+          category: "Security",
+          government: -1,
+          turing: 0,
+          poap: 0,
+          poh: 1,
+          os: 1,
+        },
+        {
+          category: "Quantifiable",
+          government: -1,
+          turing: -1,
+          poap: -1,
+          poh: -1,
+          os: 1,
+        },
+        {
+          category: "Scalability",
+          government: -1,
+          turing: -1,
+          poap: -1,
+          poh: -1,
+          os: 1,
+        },
+        {
+          category: "Self-repair",
+          government: 1,
+          turing: -1,
+          poap: -1,
+          poh: -1,
+          os: 1,
+        },
+        {
+          category: "Friendly",
+          government: 1,
+          turing: -1,
+          poap: 0,
+          poh: -1,
+          os: 1,
+        },
+      ],
+    };
+  },
+  components: {
+    iconTable: IconTable,
   },
   computed: {
     lists() {
@@ -243,12 +320,50 @@ $--grey-pixel: linear-gradient(0deg, #f8f6f7 100%, #f8f6f7 0);
   button {
     margin-top: 50px;
   }
+  .normal-width {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 20px;
+  }
+  .grey-box {
+    background: #aea1df;
+    .support {
+      width: 100%;
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      img {
+        height: 50px;
+        margin: 15px;
+      }
+    }
+  }
+  .os {
+    i {
+      font-size: 1.5em;
+    }
+  }
   .ecology-name {
     width: 100%;
     text-align: center;
   }
   .ecology-name:last-child {
     margin-bottom: 20px;
+  }
+  .safe {
+    margin-top: 220px !important;
+    margin-bottom: 200px !important;
+    p {
+      text-align: left !important;
+    }
+    p:nth-child(1) {
+      font-size: 3.5em;
+      font-weight: bold;
+    }
+    .t1 {
+      margin-bottom: 1em;
+    }
   }
   .banner {
     position: relative;
@@ -434,7 +549,7 @@ $--grey-pixel: linear-gradient(0deg, #f8f6f7 100%, #f8f6f7 0);
     }
   }
   .expand {
-    margin: 8em auto;
+    margin: 8em auto 6em auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -880,7 +995,6 @@ $--grey-pixel: linear-gradient(0deg, #f8f6f7 100%, #f8f6f7 0);
     }
   }
   .ecology {
-    padding: 60px 0 0 0;
     overflow: hidden;
     p {
       text-align: center;

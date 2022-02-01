@@ -10,12 +10,7 @@
           </el-col>
           <el-col span="16" class="content">
             <ul class="nav hidden-xs-only">
-              <el-link
-                type="primary"
-                class="primary-a"
-                href="./"
-                >Home</el-link
-              >
+              <el-link type="primary" class="primary-a" href="./">Home</el-link>
               <el-link
                 target="_blank"
                 type="primary"
@@ -123,13 +118,23 @@
           <div class="footer-right">
             <div class="footer-nav hidden-xs-only">
               <span class="footer-nav-title">{{ $t("page.home") }}</span>
-              <el-link :href="$t('page.light_paper_href')" target="_blank">{{
-                $t("page.light_paper")
-              }}</el-link>
               <el-link
                 :href="$t('page.technical_white_paper_href')"
                 target="_blank"
-                >{{ $t("page.technical_white_paper") }}</el-link
+                >{{ $t("page.light_paper") }}</el-link
+              >
+              <el-link target="_blank" href="https://docs.zerodao.net/learn/">{{
+                $t("page.learn")
+              }}</el-link>
+              <el-link
+                target="_blank"
+                href="https://docs.zerodao.net/guide/"
+                >{{ $t("page.guide") }}</el-link
+              >
+              <el-link
+                target="_blank"
+                href="https://www.zerodao.net/"
+                >zerodao</el-link
               >
             </div>
             <div class="icon-buttons hidden-sm-and-up">
@@ -302,7 +307,7 @@ body {
     text-align: center;
     overflow: hidden;
     .title {
-      color: #000;
+      color: #fff;
       margin-top: 2em;
       background: url(../assets/images/line.svg) no-repeat center center;
       background-size: 400px;
